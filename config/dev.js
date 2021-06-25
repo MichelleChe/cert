@@ -1,11 +1,11 @@
-module.exports = {
-  env: {
-    NODE_ENV: '"development"'
-  },
+export const env = {
+  NODE_ENV: '"development"'
+};
+export const defineConstants = {};
+export const mini = {};
+export const h5 = {
+  esnextModules: ['taro-ui'],
   defineConstants: {
-  },
-  mini: {},
-  h5: {
-    esnextModules: ['taro-ui']
+    'A': 'test'
   }
-}
+};
