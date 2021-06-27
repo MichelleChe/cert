@@ -1,11 +1,15 @@
 
 import { observable } from 'mobx'
+import { testApi } from '../api/test-api'
 
-console.log(process.env.A)
 const testStore = observable({
   // observable state
-  counter: 0,
-  multiple: 2,
+  counter:<number> 0,
+  multiple:<number> 2,
+  requestRes:<{
+    userId?: number
+    title?: string
+  }> {},
 
   // actions
   increment() {
@@ -19,6 +23,11 @@ const testStore = observable({
     setTimeout(() => {
       this.counter++
     }, 1000)
+  },
+  async testRequest() {
+    const data = await testApi()
+    this.requestRes = data
+    console.log(data)
   },
 
   // computeds

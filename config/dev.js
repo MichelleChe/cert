@@ -1,11 +1,20 @@
-export const env = {
-  NODE_ENV: '"development"'
-};
-export const defineConstants = {};
-export const mini = {};
-export const h5 = {
-  esnextModules: ['taro-ui'],
+module.exports = {
+  env: {
+    NODE_ENV: '"development"',
+  },
   defineConstants: {
-    'A': 'test'
+    SERVICE_URL: '"https://jsonplaceholder.typicode.com"'
+  },
+  mini: {},
+  h5: {
+    esnextModules: ['taro-ui']
+    /**
+     * 如果h5端编译后体积过大，可以使用webpack-bundle-analyzer插件对打包体积进行分析。
+     * 参考代码如下：
+     * webpackChain (chain) {
+     *   chain.plugin('analyzer')
+     *     .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
+     * }
+     */
   }
-};
+}
