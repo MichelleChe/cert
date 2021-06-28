@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import './app.scss'
 
+console.log('1')
 class App extends Component {
 
   componentDidMount () {}
