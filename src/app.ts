@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import './app.scss'
 
+console.log('test2==')
 class App extends Component {
 
   componentDidMount () {}
