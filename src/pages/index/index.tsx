@@ -1,25 +1,28 @@
-
-import { observer } from 'mobx-react'
+import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import { AtButton } from 'taro-ui'
 
-import useStore from '../../store/index'
-
 import './index.scss'
 
+export default class Index extends Component {
 
-const Index = observer(() => {
-  const { testStore } = useStore()
-  const { counter, result } = testStore
+  componentWillMount () { }
 
-  return (
-    <View className='index'>
-      <Text>Hello world!</Text>
-      <AtButton type='primary' onClick={()=> testStore.incrementAsync()}>fff</AtButton>
-      <Text>{counter}</Text>
-      <View>{result}</View>
-    </View>
-  )
-})
+  componentDidMount () { }
 
-export default Index
+  componentWillUnmount () { }
+
+  componentDidShow () { }
+
+  componentDidHide () { }
+
+  render () {
+    return (
+      <View className='index'>
+        <Text>Hello world!</Text>
+        <AtButton type='primary'>fff</AtButton>
+        <Text>dddd</Text>
+      </View>
+    )
+  }
+}
