@@ -99,11 +99,7 @@ export interface BaseResponse<T> {
 // 错误提示
 let errorTimer
 const service = createService({
-<<<<<<< HEAD
-  baseURL: `${process.env.API_URL}/api`,
-=======
   baseURL: SERVICE_URL,
->>>>>>> feature/rm20210727
 }, {
   setHeaderAuthorization(config) {
     // const accessToken = tokenModel.get()
