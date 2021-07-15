@@ -1,7 +1,8 @@
 export default {
   pages: [
     'pages/index/index', // 首页
-    'pages/personal/index' // 个人中心
+    'pages/personal/index', // 个人中心
+    'pages/login/index'
   ],
   window: {
     backgroundTextStyle: 'light',      // 下拉 loading 的样式，仅支持 dark / light

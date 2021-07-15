@@ -99,7 +99,11 @@ export interface BaseResponse<T> {
 // 错误提示
 let errorTimer
 const service = createService({
+<<<<<<< HEAD
   baseURL: `${process.env.API_URL}/api`,
+=======
+  baseURL: SERVICE_URL,
+>>>>>>> feature/rm20210727
 }, {
   setHeaderAuthorization(config) {
     // const accessToken = tokenModel.get()
@@ -108,7 +112,6 @@ const service = createService({
     //   config.headers.Authorization = `Bearer ${accessToken}`
     // }
 
-    // todo 内测环境，使用临时头部登录
     // config.headers['login-user'] = process.env.NODE_ENV === 'development' ? '111' : getPvUid()
 
     return config
