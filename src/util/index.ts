@@ -25,3 +25,11 @@ export function redirectTo(pathName, params) {
     url
   })
 }
+
+export function sleep(time) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(true)
+    }, time);
+  })
+}
