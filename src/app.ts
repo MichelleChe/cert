@@ -1,7 +1,8 @@
 import { Component } from 'react'
 import './app.scss'
 
-console.log('1')
+import './util/routeMiddleware'
+
 class App extends Component {
 
   componentDidMount () {}
@@ -12,10 +13,10 @@ class App extends Component {
 
   componentDidCatchError () {}
 
-  // this.props.children 是将要会渲染的页面
   render () {
     return this.props.children
   }
 }
+
 
 export default App

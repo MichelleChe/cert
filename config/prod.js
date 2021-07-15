@@ -3,6 +3,7 @@ module.exports = {
     NODE_ENV: '"production"'
   },
   defineConstants: {
+    SERVICE_URL: '"https://jsonplaceholder.typicode.com"'
   },
   mini: {},
   h5: {
