@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import './app.scss'
 
-import './util/routeMiddleware'
+import './middleware'
 
 class App extends Component {
 

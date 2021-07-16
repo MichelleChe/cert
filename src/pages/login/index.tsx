@@ -1,12 +1,11 @@
 import { View } from '@tarojs/components'
-import { observer } from 'mobx-react'
 
-const Login = observer(() => {
+const Login = () => {
   return (
     <View>
       login
     </View>
   )
-})
+}
 
 export default Login

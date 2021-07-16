@@ -1,6 +1,6 @@
 
 import { observer } from 'mobx-react'
-import { View, Text } from '@tarojs/components'
+import { View, Text, Button } from '@tarojs/components'
 import Router from 'tarojs-router-next'
 import { AtButton } from 'taro-ui'
 
@@ -20,7 +20,7 @@ const Index = observer(() => {
   return (
     <View className='index'>
       <Text>Hello world!</Text>
-      <AtButton type='primary' onClick={()=> testStore.incrementAsync()}>counterText</AtButton>
+      <Button type='primary' onClick={()=> testStore.incrementAsync()}>counterText</Button>
       <Text>{counter}</Text>
       <View>{result}</View>
       <AtButton type='primary' onClick={()=> testStore.testRequest()}>requestTest</AtButton>
